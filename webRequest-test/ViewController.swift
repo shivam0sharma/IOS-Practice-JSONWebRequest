@@ -21,7 +21,17 @@ class ViewController: UIViewController {
             if let responseData = data {
                 do {
                     let json = try JSONSerialization.jsonObject(with: responseData, options: .allowFragments)
-                    print(json)
+                    
+                    
+                    if let dict = json as? Dictionary<String, AnyObject> {
+                        if let name = dict["name"] as? String, let height = dict["height"] as? String, let birthYear = dict["birth_year"] as? String, let hairColor = dict["hair_color"] as? String {
+                            let person = SWPerson(name: name, height: height, birthYear: birthYear, hairColor: hairColor)
+                            print(person.name)
+                            print(person.height)
+                            print(person.birthYear)
+                            print(person.hairColor)
+                        }
+                    }
                 } catch {
                     print("could not serialize")
                 }

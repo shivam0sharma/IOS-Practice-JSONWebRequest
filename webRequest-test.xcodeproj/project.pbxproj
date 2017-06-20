@@ -12,6 +12,7 @@
 		402460E81EF8B40D007FF83C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402460E61EF8B40D007FF83C /* Main.storyboard */; };
 		402460EA1EF8B40D007FF83C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 402460E91EF8B40D007FF83C /* Assets.xcassets */; };
 		402460ED1EF8B40D007FF83C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402460EB1EF8B40D007FF83C /* LaunchScreen.storyboard */; };
+		406FFDF61EF9611E00941128 /* SWPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406FFDF51EF9611E00941128 /* SWPerson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		402460E91EF8B40D007FF83C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		402460EC1EF8B40D007FF83C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		402460EE1EF8B40D007FF83C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		406FFDF51EF9611E00941128 /* SWPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWPerson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		402460E11EF8B40D007FF83C /* webRequest-test */ = {
 			isa = PBXGroup;
 			children = (
+				406FFDF41EF9611000941128 /* Model */,
 				402460E21EF8B40D007FF83C /* AppDelegate.swift */,
 				402460E41EF8B40D007FF83C /* ViewController.swift */,
 				402460E61EF8B40D007FF83C /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				402460EE1EF8B40D007FF83C /* Info.plist */,
 			);
 			path = "webRequest-test";
+			sourceTree = "<group>";
+		};
+		406FFDF41EF9611000941128 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				406FFDF51EF9611E00941128 /* SWPerson.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				406FFDF61EF9611E00941128 /* SWPerson.swift in Sources */,
 				402460E51EF8B40D007FF83C /* ViewController.swift in Sources */,
 				402460E31EF8B40D007FF83C /* AppDelegate.swift in Sources */,
 			);
@@ -304,6 +316,7 @@
 				402460F31EF8B40D007FF83C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
